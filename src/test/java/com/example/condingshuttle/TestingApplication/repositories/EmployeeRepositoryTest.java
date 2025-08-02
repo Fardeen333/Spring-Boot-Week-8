@@ -28,6 +28,7 @@ class EmployeeRepositoryTest {
     @BeforeEach
     void setUp() {
         employee = Employee.builder()
+                .id(100000L)
                 .name("Fardeen")
                 .email("fardeen@gmail.com")
                 .salary(1000L)

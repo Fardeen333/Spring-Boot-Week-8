@@ -54,7 +54,7 @@ class TestingApplicationTests {
 
 		assertThat("Apple")
 				.startsWith("App")
-				.hasSize(20);
+				.hasSize(5);
 
 	}
 
@@ -76,11 +76,9 @@ class TestingApplicationTests {
 		int a = 5;
 		int b = 0;
 
-		divideTwoNumbers(a, b);
-
-		assertThatThrownBy( () -> divideTwoNumbers(a, b))
-				.isInstanceOf(ArrayStoreException.class)
-				.hasMessage("Tried to divide by zero.");
+		assertThatThrownBy(() -> divideTwoNumbers(a, b))
+				.isInstanceOf(ArithmeticException.class)
+				.hasMessage("/ by zero");
 	}
 
 }

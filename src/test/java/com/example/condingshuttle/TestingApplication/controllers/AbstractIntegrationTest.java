@@ -18,13 +18,13 @@ public class AbstractIntegrationTest {
     WebTestClient webTestClient;
 
     Employee testEmployee = Employee.builder()
-            .id(1L)
+            .id(1000L)
                 .email("fardeen@gmail.com")
                 .name("Fardeen")
                 .salary(200L)
                 .build();
     EmployeeDto testEmployeeDto = EmployeeDto.builder()
-            .id(1L)
+            .id(1000L)
                 .email("fardeen@gmail.com")
                 .name("Fardeen")
                 .salary(200L)
